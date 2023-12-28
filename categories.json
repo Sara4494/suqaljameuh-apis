@@ -1,0 +1,242 @@
+[
+  {
+    "model": "varieties.category",
+    "pk": 3,
+    "fields": {
+      "name": "Real Estate for Sale",
+      "name_en": "Real Estate for Sale",
+      "name_ar": null,
+      "icon": "categories-images/estateSale.png",
+      "added_at": "2023-11-05T20:05:38.519Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 4,
+    "fields": {
+      "name": "Real Estate for Rent",
+      "name_en": "Real Estate for Rent",
+      "name_ar": null,
+      "icon": "categories-images/estateRent.png",
+      "added_at": "2023-11-05T20:07:06.480Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 5,
+    "fields": {
+      "name": "Car & Bikes",
+      "name_en": "Car & Bikes",
+      "name_ar": null,
+      "icon": "categories-images/car.png",
+      "added_at": "2023-11-05T20:07:27.167Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 6,
+    "fields": {
+      "name": "Mobile - Tablet",
+      "name_en": "Mobile - Tablet",
+      "name_ar": null,
+      "icon": "categories-images/mobile.png",
+      "added_at": "2023-11-05T20:07:51.904Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 7,
+    "fields": {
+      "name": "Electronic - Appliances",
+      "name_en": "Electronic - Appliances",
+      "name_ar": null,
+      "icon": "categories-images/electronics.png",
+      "added_at": "2023-11-05T20:08:31.575Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 8,
+    "fields": {
+      "name": "Home & Garden",
+      "name_en": "Home & Garden",
+      "name_ar": null,
+      "icon": "categories-images/home.png",
+      "added_at": "2023-11-05T20:08:57.473Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 9,
+    "fields": {
+      "name": "Woman's Fashion",
+      "name_en": "Woman's Fashion",
+      "name_ar": null,
+      "icon": "categories-images/women.png",
+      "added_at": "2023-11-05T20:09:24.709Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 10,
+    "fields": {
+      "name": "Men's Fashion",
+      "name_en": "Men's Fashion",
+      "name_ar": null,
+      "icon": "categories-images/men.png",
+      "added_at": "2023-11-05T20:09:47.585Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 14,
+    "fields": {
+      "name": "Services",
+      "name_en": "Services",
+      "name_ar": null,
+      "icon": "categories-images/services.png",
+      "added_at": "2023-11-05T20:13:35.773Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 17,
+    "fields": {
+      "name": "Pets",
+      "name_en": "Pets",
+      "name_ar": null,
+      "icon": "categories-images/pets.png",
+      "added_at": "2023-11-05T20:14:32.343Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 18,
+    "fields": {
+      "name": "Books - Sport -Others",
+      "name_en": "Books - Sport -Others",
+      "name_ar": null,
+      "icon": "categories-images/books.png",
+      "added_at": "2023-11-05T20:14:55.812Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 21,
+    "fields": {
+      "name": "Productive Families",
+      "name_en": "Productive Families",
+      "name_ar": null,
+      "icon": "categories-images/productive.png",
+      "added_at": "2023-11-05T20:16:42.774Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 22,
+    "fields": {
+      "name": "Video Games & Console",
+      "name_en": "Video Games & Console",
+      "name_ar": null,
+      "icon": "categories-images/games.png",
+      "added_at": "2023-11-05T20:20:01.453Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 24,
+    "fields": {
+      "name": "jobs",
+      "name_en": "jobs",
+      "name_ar": null,
+      "icon": "categories-images/jobs_8RuQmdw.png",
+      "added_at": "2023-11-08T17:15:06.755Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 25,
+    "fields": {
+      "name": "Baby - Kids",
+      "name_en": "Baby - Kids",
+      "name_ar": null,
+      "icon": "categories-images/baby.png",
+      "added_at": "2023-11-09T09:06:34.270Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 26,
+    "fields": {
+      "name": "Education & Training",
+      "name_en": "Education & Training",
+      "name_ar": null,
+      "icon": "categories-images/education.png",
+      "added_at": "2023-11-09T09:07:05.889Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 27,
+    "fields": {
+      "name": "Food - Supplements",
+      "name_en": "Food - Supplements",
+      "name_ar": null,
+      "icon": "categories-images/food.png",
+      "added_at": "2023-11-09T09:32:15.693Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 28,
+    "fields": {
+      "name": "Business - Industrial",
+      "name_en": "Business - Industrial",
+      "name_ar": null,
+      "icon": "categories-images/business.png",
+      "added_at": "2023-11-09T09:32:35.395Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 29,
+    "fields": {
+      "name": "Books - Sport - Others",
+      "name_en": "Books - Sport - Others",
+      "name_ar": null,
+      "icon": "categories-images/books.png",
+      "added_at": "2023-11-09T09:32:57.005Z",
+      "is_enabled": true
+    }
+  },
+  {
+    "model": "varieties.category",
+    "pk": 30,
+    "fields": {
+      "name": "Charitable",
+      "name_en": "Charitable",
+      "name_ar": null,
+      "icon": "categories-images/charitable.png",
+      "added_at": "2023-11-09T09:33:21.605Z",
+      "is_enabled": true
+    }
+  }
+]

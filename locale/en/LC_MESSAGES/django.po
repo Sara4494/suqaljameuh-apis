@@ -1,0 +1,776 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-26 23:20+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\settings.py:294
+msgid "English"
+msgstr ""
+
+#: .\core\settings.py:295
+msgid "Arabic"
+msgstr ""
+
+#: .\memberships\apis\views\create.py:18
+msgid "Please provide data to create your membership"
+msgstr ""
+
+#: .\memberships\apis\views\create.py:30
+msgid "The membership was created successfully"
+msgstr ""
+
+#: .\memberships\apis\views\create.py:34
+msgid "An error occurred while creating the membership"
+msgstr ""
+
+#: .\memberships\apis\views\delete.py:16 .\memberships\apis\views\update.py:25
+msgid "There's no membership with this name"
+msgstr ""
+
+#: .\memberships\apis\views\delete.py:22
+msgid "membership was deleted successfully!"
+msgstr ""
+
+#: .\memberships\apis\views\delete.py:26 .\memberships\apis\views\update.py:48
+msgid "an error occurred while deleting the membership! please try again"
+msgstr ""
+
+#: .\memberships\apis\views\get.py:20
+msgid "An error occurred while retrieving memberships, please try again"
+msgstr ""
+
+#: .\memberships\apis\views\subscribe.py:32
+msgid "Please fill the needed information"
+msgstr ""
+
+#: .\memberships\apis\views\subscribe.py:41
+msgid "Please select your membership"
+msgstr ""
+
+#: .\memberships\apis\views\subscribe.py:46
+msgid "Please provide credit card information"
+msgstr ""
+
+#: .\memberships\apis\views\subscribe.py:53
+msgid "Couldn't find this membership"
+msgstr ""
+
+#: .\memberships\apis\views\subscribe.py:69
+msgid "This error from creating customer in membership!"
+msgstr ""
+
+#: .\memberships\apis\views\subscribe.py:81
+msgid "an error occurred while finalizing the transaction, please try again"
+msgstr ""
+
+#: .\memberships\apis\views\subscribe.py:94
+#: .\memberships\apis\views\subscribe.py:127
+msgid ""
+"You have subscribed in the membership successfully! Now you can enjoy its "
+"exclusive features"
+msgstr ""
+
+#: .\memberships\apis\views\subscribe.py:99
+#: .\memberships\apis\views\subscribe.py:132
+msgid ""
+"An unexpected error occurred while activating the membership, please reach "
+"out for the support"
+msgstr ""
+
+#: .\memberships\apis\views\subscribeuser.py:24
+msgid "Membership name is required"
+msgstr ""
+
+#: .\memberships\apis\views\subscribeuser.py:29
+msgid "Invalid membership name"
+msgstr ""
+
+#: .\memberships\apis\views\subscribeuser.py:50
+msgid "Membership subscribed successfully"
+msgstr ""
+
+#: .\memberships\apis\views\update.py:16
+msgid "No data to update the membership"
+msgstr ""
+
+#: .\memberships\apis\views\update.py:41
+msgid "the membership updated successfully"
+msgstr ""
+
+#: .\memberships\apis\views\update.py:44
+msgid "nothing was updated"
+msgstr ""
+
+#: .\varieties\apis\views\amenity\create.py:16
+msgid "Amenity created successfully."
+msgstr ""
+
+#: .\varieties\apis\views\amenity\create.py:20
+#: .\varieties\apis\views\amenity\delete.py:18
+#: .\varieties\apis\views\amenity\get.py:21
+#: .\varieties\apis\views\amenity\update.py:23
+#: .\varieties\apis\views\city\create.py:19
+#: .\varieties\apis\views\city\delete.py:18
+#: .\varieties\apis\views\city\get.py:25
+#: .\varieties\apis\views\city\update.py:23
+#: .\varieties\apis\views\country\create.py:18
+#: .\varieties\apis\views\country\delete.py:18
+#: .\varieties\apis\views\country\update.py:22
+#: .\varieties\apis\views\currency\create.py:18
+#: .\varieties\apis\views\currency\delete.py:18
+#: .\varieties\apis\views\currency\get.py:17
+#: .\varieties\apis\views\currency\update.py:23
+#: .\varieties\apis\views\education\create.py:18
+#: .\varieties\apis\views\education\delete.py:20
+#: .\varieties\apis\views\education\get.py:19
+#: .\varieties\apis\views\education\update.py:23
+#: .\varieties\apis\views\experience\delete.py:20
+#: .\varieties\apis\views\experience\get.py:20
+#: .\varieties\apis\views\experience\update.py:23
+#: .\varieties\apis\views\paymentmethod\create.py:21
+#: .\varieties\apis\views\paymentmethod\delete.py:18
+#: .\varieties\apis\views\paymentmethod\get.py:21
+#: .\varieties\apis\views\paymentmethod\get.py:32
+#: .\varieties\apis\views\paymentmethod\update.py:22
+#: .\varieties\apis\views\qualification\create.py:20
+#: .\varieties\apis\views\qualification\delete.py:19
+#: .\varieties\apis\views\qualification\get.py:20
+#: .\varieties\apis\views\qualification\update.py:24
+msgid "Internal server error occurred."
+msgstr ""
+
+#: .\varieties\apis\views\amenity\delete.py:14
+msgid "Amenity deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\amenity\delete.py:16
+#: .\varieties\apis\views\amenity\get.py:19
+#: .\varieties\apis\views\amenity\update.py:21
+msgid "Amenity object not found."
+msgstr ""
+
+#: .\varieties\apis\views\amenity\get.py:17
+msgid "Amenity retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\amenity\update.py:17
+msgid "Amenity updated successfully."
+msgstr ""
+
+#: .\varieties\apis\views\capacity\create.py:16
+#: .\varieties\apis\views\capacity\update.py:21
+msgid "This name is already registered at the Capacity."
+msgstr ""
+
+#: .\varieties\apis\views\capacity\create.py:20
+msgid "Capacity created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\capacity\create.py:22
+#: .\varieties\apis\views\capacity\update.py:26
+#: .\varieties\apis\views\creationyear\create.py:21
+#: .\varieties\apis\views\creationyear\update.py:24
+#: .\varieties\apis\views\kilometer\create.py:20
+#: .\varieties\apis\views\kilometer\update.py:24
+#: .\varieties\apis\views\material\create.py:22
+#: .\varieties\apis\views\material\update.py:24
+#: .\varieties\apis\views\memory\create.py:21
+#: .\varieties\apis\views\memory\update.py:25
+#: .\varieties\apis\views\model\create.py:21
+#: .\varieties\apis\views\model\update.py:24
+#: .\varieties\apis\views\os\create.py:22
+#: .\varieties\apis\views\os\update.py:25
+#: .\varieties\apis\views\rentperiod\create.py:21
+#: .\varieties\apis\views\rentperiod\update.py:25
+#: .\varieties\apis\views\site\create.py:20
+#: .\varieties\apis\views\site\update.py:25
+#: .\varieties\apis\views\storage\create.py:20
+#: .\varieties\apis\views\storage\update.py:25
+#: .\varieties\apis\views\subtype\create.py:20
+#: .\varieties\apis\views\subtype\update.py:23
+#: .\varieties\apis\views\type\create.py:20
+msgid "Invalid data provided"
+msgstr ""
+
+#: .\varieties\apis\views\capacity\delete.py:15
+msgid "Capacity object not found."
+msgstr ""
+
+#: .\varieties\apis\views\capacity\delete.py:19
+msgid "Capacity deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\capacity\delete.py:21
+#: .\varieties\apis\views\creationyear\delete.py:21
+#: .\varieties\apis\views\kilometer\delete.py:20
+#: .\varieties\apis\views\material\delete.py:20
+#: .\varieties\apis\views\memory\delete.py:21
+#: .\varieties\apis\views\model\delete.py:19
+#: .\varieties\apis\views\os\delete.py:21
+#: .\varieties\apis\views\rentperiod\delete.py:21
+#: .\varieties\apis\views\site\delete.py:20
+#: .\varieties\apis\views\size\delete.py:20
+#: .\varieties\apis\views\size\get.py:23
+#: .\varieties\apis\views\storage\delete.py:20
+#: .\varieties\apis\views\subtype\delete.py:20
+#: .\varieties\apis\views\top_style\get.py:24
+msgid "Invalid request method."
+msgstr ""
+
+#: .\varieties\apis\views\capacity\update.py:15
+msgid "Capacity does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\capacity\update.py:25
+msgid "Capacity updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\city\create.py:15
+msgid "City created successfully."
+msgstr ""
+
+#: .\varieties\apis\views\city\delete.py:14
+msgid "City deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\city\delete.py:16
+#: .\varieties\apis\views\city\get.py:23
+#: .\varieties\apis\views\city\update.py:21
+msgid "City object not found."
+msgstr ""
+
+#: .\varieties\apis\views\city\get.py:21
+msgid "City retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\city\get.py:34
+msgid "Country name is required."
+msgstr ""
+
+#: .\varieties\apis\views\city\update.py:17
+msgid "City updated successfully."
+msgstr ""
+
+#: .\varieties\apis\views\country\create.py:14
+msgid "Country created successfully."
+msgstr ""
+
+#: .\varieties\apis\views\country\delete.py:14
+msgid "Country deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\country\delete.py:16
+#: .\varieties\apis\views\country\update.py:20
+msgid "Country object not found."
+msgstr ""
+
+#: .\varieties\apis\views\country\get.py:18
+msgid "Country retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\country\get.py:20
+msgid "ountry object not found."
+msgstr ""
+
+#: .\varieties\apis\views\country\get.py:31
+msgid "Countries retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\country\update.py:16
+msgid "Country updated successfully."
+msgstr ""
+
+#: .\varieties\apis\views\creationyear\create.py:15
+#: .\varieties\apis\views\creationyear\update.py:19
+msgid "This name is already registered at the CreationYear."
+msgstr ""
+
+#: .\varieties\apis\views\creationyear\create.py:19
+msgid "CreationYear created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\creationyear\delete.py:15
+msgid "CreationYear object not found."
+msgstr ""
+
+#: .\varieties\apis\views\creationyear\delete.py:19
+msgid "CreationYear deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\creationyear\update.py:14
+msgid "CreationYear does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\creationyear\update.py:23
+msgid "CreationYear updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\currency\create.py:14
+msgid "Currency created successfully."
+msgstr ""
+
+#: .\varieties\apis\views\currency\delete.py:14
+msgid "Currency deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\currency\delete.py:16
+#: .\varieties\apis\views\currency\get.py:15
+#: .\varieties\apis\views\currency\update.py:21
+msgid "Currency object not found."
+msgstr ""
+
+#: .\varieties\apis\views\currency\get.py:13
+msgid "Currency retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\currency\update.py:17
+msgid "Currency updated successfully."
+msgstr ""
+
+#: .\varieties\apis\views\education\create.py:14
+msgid "Education created successfully."
+msgstr ""
+
+#: .\varieties\apis\views\education\delete.py:16
+msgid "Education deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\education\delete.py:18
+#: .\varieties\apis\views\education\get.py:17
+#: .\varieties\apis\views\education\update.py:21
+msgid "Education object not found."
+msgstr ""
+
+#: .\varieties\apis\views\education\get.py:15
+msgid "Education retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\education\update.py:17
+msgid "Education updated successfully."
+msgstr ""
+
+#: .\varieties\apis\views\experience\create.py:15
+msgid "Experience created successfully."
+msgstr ""
+
+#: .\varieties\apis\views\experience\delete.py:16
+msgid "Experience deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\experience\delete.py:18
+#: .\varieties\apis\views\experience\get.py:18
+#: .\varieties\apis\views\experience\update.py:21
+msgid "Experience object not found."
+msgstr ""
+
+#: .\varieties\apis\views\experience\get.py:16
+msgid "Experience retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\experience\update.py:17
+msgid "Experience updated successfully."
+msgstr ""
+
+#: .\varieties\apis\views\kilometer\create.py:14
+#: .\varieties\apis\views\kilometer\update.py:19
+msgid "This name is already registered at the KiloMeter."
+msgstr ""
+
+#: .\varieties\apis\views\kilometer\create.py:18
+msgid "KiloMeter created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\kilometer\delete.py:14
+msgid "KiloMeter object not found."
+msgstr ""
+
+#: .\varieties\apis\views\kilometer\delete.py:18
+msgid "KiloMeter deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\kilometer\update.py:14
+msgid "KiloMeter does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\kilometer\update.py:23
+msgid "KiloMeter updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\material\create.py:16
+#: .\varieties\apis\views\material\update.py:19
+msgid "This name is already registered at the Material."
+msgstr ""
+
+#: .\varieties\apis\views\material\create.py:20
+msgid "Material created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\material\delete.py:14
+msgid "Material object not found."
+msgstr ""
+
+#: .\varieties\apis\views\material\delete.py:18
+msgid "Material deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\material\update.py:14
+msgid "Material does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\material\update.py:23
+msgid "Material updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\memory\create.py:15
+#: .\varieties\apis\views\memory\update.py:20
+msgid "This name is already registered at the Memory."
+msgstr ""
+
+#: .\varieties\apis\views\memory\create.py:19
+msgid "Memory created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\memory\delete.py:15
+msgid "Memory object not found."
+msgstr ""
+
+#: .\varieties\apis\views\memory\delete.py:19
+msgid "Memory deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\memory\update.py:15
+msgid "Memory does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\memory\update.py:24
+msgid "Memory updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\model\create.py:15
+#: .\varieties\apis\views\model\update.py:19
+msgid "This name is already registered at the Model."
+msgstr ""
+
+#: .\varieties\apis\views\model\create.py:19
+msgid "Model created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\model\delete.py:13
+msgid "Model object not found."
+msgstr ""
+
+#: .\varieties\apis\views\model\delete.py:17
+msgid "Model deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\model\update.py:14
+msgid "Model does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\model\update.py:23
+msgid "Model updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\os\create.py:16
+#: .\varieties\apis\views\os\update.py:20
+msgid "This name is already registered at the OS."
+msgstr ""
+
+#: .\varieties\apis\views\os\create.py:20
+msgid "OS created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\os\delete.py:15
+msgid "OS object not found."
+msgstr ""
+
+#: .\varieties\apis\views\os\delete.py:19
+msgid "OS deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\os\update.py:15
+msgid "OS does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\os\update.py:24
+msgid "OS updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\paymentmethod\create.py:17
+msgid "Payment method created successfully."
+msgstr ""
+
+#: .\varieties\apis\views\paymentmethod\delete.py:14
+msgid "Payment method deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\paymentmethod\delete.py:16
+#: .\varieties\apis\views\paymentmethod\get.py:19
+#: .\varieties\apis\views\paymentmethod\update.py:20
+msgid "Payment method object not found."
+msgstr ""
+
+#: .\varieties\apis\views\paymentmethod\get.py:17
+msgid "Payment method retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\paymentmethod\get.py:30
+msgid "Payment methods retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\paymentmethod\update.py:16
+msgid "Payment method updated successfully."
+msgstr ""
+
+#: .\varieties\apis\views\qualification\create.py:16
+msgid "Qualification created successfully."
+msgstr ""
+
+#: .\varieties\apis\views\qualification\create.py:18
+#: .\varieties\apis\views\top_style\create.py:24
+msgid "Invalid data provided."
+msgstr ""
+
+#: .\varieties\apis\views\qualification\delete.py:15
+msgid "Qualification deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\qualification\delete.py:17
+#: .\varieties\apis\views\qualification\get.py:18
+#: .\varieties\apis\views\qualification\update.py:22
+msgid "Qualification object not found."
+msgstr ""
+
+#: .\varieties\apis\views\qualification\update.py:18
+msgid "Qualification updated successfully."
+msgstr ""
+
+#: .\varieties\apis\views\rentperiod\create.py:15
+#: .\varieties\apis\views\rentperiod\update.py:20
+msgid "This name is already registered at the RentPeriod."
+msgstr ""
+
+#: .\varieties\apis\views\rentperiod\create.py:19
+msgid "RentPeriod created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\rentperiod\delete.py:15
+msgid "RentPeriod object not found."
+msgstr ""
+
+#: .\varieties\apis\views\rentperiod\delete.py:19
+msgid "RentPeriod deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\rentperiod\update.py:15
+msgid "RentPeriod does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\rentperiod\update.py:24
+msgid "RentPeriod updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\site\create.py:14
+#: .\varieties\apis\views\site\update.py:20
+msgid "This name is already registered at the Site."
+msgstr ""
+
+#: .\varieties\apis\views\site\create.py:18
+msgid "Site created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\site\delete.py:14
+msgid "Site object not found."
+msgstr ""
+
+#: .\varieties\apis\views\site\delete.py:18
+msgid "Site deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\site\update.py:15
+msgid "Site does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\site\update.py:24
+msgid "Site updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\size\create.py:18
+msgid "Please provide name for the size"
+msgstr ""
+
+#: .\varieties\apis\views\size\create.py:23
+msgid "Please provide category for the size"
+msgstr ""
+
+#: .\varieties\apis\views\size\create.py:30
+msgid "There's no category with this name!"
+msgstr ""
+
+#: .\varieties\apis\views\size\create.py:37
+msgid "This size is already exists"
+msgstr ""
+
+#: .\varieties\apis\views\size\create.py:46
+msgid "The size was created successfully!"
+msgstr ""
+
+#: .\varieties\apis\views\size\create.py:50
+msgid "An error occurred while creating the size"
+msgstr ""
+
+#: .\varieties\apis\views\size\delete.py:14
+#: .\varieties\apis\views\size\update.py:14
+msgid "Size object not found."
+msgstr ""
+
+#: .\varieties\apis\views\size\delete.py:18
+msgid "Size deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\size\get.py:19
+msgid "Sizes retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\size\update.py:18
+msgid "This name is already registered at the size."
+msgstr ""
+
+#: .\varieties\apis\views\size\update.py:22
+msgid "Size updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\storage\create.py:14
+#: .\varieties\apis\views\storage\update.py:20
+msgid "This name is already registered at the Storage."
+msgstr ""
+
+#: .\varieties\apis\views\storage\create.py:18
+msgid "Storage created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\storage\delete.py:14
+msgid "Storage object not found."
+msgstr ""
+
+#: .\varieties\apis\views\storage\delete.py:18
+msgid "Storage deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\storage\update.py:15
+msgid "Storage does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\storage\update.py:24
+msgid "Storage updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\sub_category\create.py:18
+#: .\varieties\apis\views\sub_category\update.py:21
+msgid "This name is already registered at the SubCategory."
+msgstr ""
+
+#: .\varieties\apis\views\sub_category\create.py:22
+msgid "Subcategory created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\sub_category\delete.py:15
+#: .\varieties\apis\views\sub_category\update.py:16
+msgid "SubCategory object not found."
+msgstr ""
+
+#: .\varieties\apis\views\sub_category\delete.py:18
+msgid "Subcategory deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\sub_category\update.py:25
+msgid "Subcategory updated successfully."
+msgstr ""
+
+#: .\varieties\apis\views\subtype\create.py:14
+#: .\varieties\apis\views\subtype\update.py:18
+msgid "This name is already registered at the SubType."
+msgstr ""
+
+#: .\varieties\apis\views\subtype\create.py:18
+msgid "SubType created successfully"
+msgstr ""
+
+#: .\varieties\apis\views\subtype\delete.py:14
+msgid "SubType object not found."
+msgstr ""
+
+#: .\varieties\apis\views\subtype\delete.py:18
+msgid "SubType deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\subtype\update.py:13
+msgid "SubType does not exist"
+msgstr ""
+
+#: .\varieties\apis\views\subtype\update.py:22
+msgid "SubType updated successfully"
+msgstr ""
+
+#: .\varieties\apis\views\top_style\create.py:18
+#: .\varieties\apis\views\top_style\update.py:19
+msgid "This name is already registered at the TopStyle."
+msgstr ""
+
+#: .\varieties\apis\views\top_style\create.py:22
+msgid "TopStyle created successfully."
+msgstr ""
+
+#: .\varieties\apis\views\top_style\delete.py:13
+#: .\varieties\apis\views\top_style\update.py:14
+msgid "TopStyle object not found."
+msgstr ""
+
+#: .\varieties\apis\views\top_style\delete.py:16
+msgid "TopStyle deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\top_style\get.py:21
+msgid "TopStyles retrieved successfully."
+msgstr ""
+
+#: .\varieties\apis\views\top_style\update.py:23
+msgid "TopStyle updated successfully."
+msgstr ""
+
+#: .\varieties\apis\views\type\create.py:15
+#: .\varieties\apis\views\type\update.py:18
+msgid "This name is already registered at the Type."
+msgstr ""
+
+#: .\varieties\apis\views\type\create.py:19
+msgid "Type created successfully."
+msgstr ""
+
+#: .\varieties\apis\views\type\delete.py:13
+#: .\varieties\apis\views\type\update.py:13
+msgid "Type object not found."
+msgstr ""
+
+#: .\varieties\apis\views\type\delete.py:17
+msgid "Type deleted successfully."
+msgstr ""
+
+#: .\varieties\apis\views\type\update.py:22
+msgid "Type updated successfully."
+msgstr ""
