@@ -4,15 +4,18 @@ from rest_framework.response import Response
 from rest_framework import permissions, status
 from varieties.models import Amenity
 from varieties.apis.serializers import AmenitySerializer
+from django.utils.translation import gettext as _
+
 @api_view(['POST'])
 @permission_classes([permissions.IsAdminUser])
 def amenity_create(request):
+    data = request.data
+
+    name = data.get("name")
     try:
-        serializer = AmenitySerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save(user=request.user)
-            return Response({'message': 'Amenity created successfully.', 'data': serializer.data}, status=status.HTTP_201_CREATED)
-        else:
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        Amenity.objects.create(
+            name = name
+        )
+        return Response({'message': _('Amenity created successfully.')}, status=status.HTTP_200_OK)
     except Exception as e:
-        return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response({'error': str(e), 'message': _('Internal server error occurred.')}, status=status.HTTP_400_BAD_REQUEST)

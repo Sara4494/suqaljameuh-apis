@@ -3,13 +3,13 @@ from rest_framework.response import Response
 from rest_framework import status
 from varieties.models import Currency
 from varieties.apis.serializers import CurrencySerializer
+from django.utils.translation import gettext as _
+
 @api_view(['GET'])
-def currency_detail(request, pk):
+def get_currencies(request):
     try:
-        currency = Currency.objects.get(pk=pk)
-        serializer = CurrencySerializer(currency)
-        return Response({'message': 'Currency retrieved successfully.', 'data': serializer.data}, status=status.HTTP_200_OK)
-    except Currency.DoesNotExist:
-        return Response({'error': 'Currency object not found.'}, status=status.HTTP_404_NOT_FOUND)
+        currency = Currency.objects.all()
+        serializer = CurrencySerializer(currency, many=True)
+        return Response({'message': _('Currencies retrieved successfully.'), 'data': serializer.data}, status=status.HTTP_200_OK)
     except Exception as e:
-        return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response({'error': str(e), 'message': _('Internal server error occurred.')}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

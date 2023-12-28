@@ -129,7 +129,7 @@ class Site(models.Model):
     name = models.CharField(max_length=100)
     added_at = models.DateTimeField(auto_now_add=True)
     is_enabled = models.BooleanField(default=True)
-
+ 
     def __str__(self):
         return str(self.name)
 

@@ -1,23 +1,30 @@
-from rest_framework.decorators import api_view,permission_classes
+from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from users.models import User
- 
-from rest_framework import status,permissions
+
+from rest_framework import status, permissions
 from rest_framework import status
 from django.shortcuts import get_object_or_404
+
+
 @api_view(['POST'])
 @permission_classes([permissions.IsAuthenticated])
 def follow(request):
     try:
         user_to_follow_id = request.data.get('user_to_follow')
         user_to_follow = User.objects.get(id=user_to_follow_id)
+        if request.user.id == user_to_follow.pk:
+            return Response({
+                "message": "You can't follow yourself"
+            }, status=status.HTTP_400_BAD_REQUEST)
         if request.user.followings.filter(id=user_to_follow_id).exists():
             return Response({'error': 'You already follow this user.'}, status=status.HTTP_400_BAD_REQUEST)
         request.user.followings.add(user_to_follow)
         user_to_follow.followers.add(request.user)
         return Response({'success': 'You are now following this user.'}, status=status.HTTP_200_OK)
     except Exception as e:
-        return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
 
 @api_view(['POST'])
 @permission_classes([permissions.IsAuthenticated])

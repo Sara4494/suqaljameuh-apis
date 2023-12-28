@@ -3,22 +3,49 @@
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework import permissions, status
-from varieties.models import SubCategory
+from varieties.models import SubCategory, Category
 from varieties.apis.serializers import SubCategorySerializer
+from django.utils.translation import gettext as _
+
+
 @api_view(['POST'])
 @permission_classes([permissions.IsAdminUser])
 def create_subcategory(request):
+    data = request.data
+
+    name = data.get("name")
+    category = data.get("category")
+
+    if not category:
+        return Response({
+            "message": "Please enter an category to create the subcategory"
+        }, status=status.HTTP_400_BAD_REQUEST)
+
+    if not name:
+        return Response({
+            "message": "Please enter an name to create the subcategory"
+        }, status=status.HTTP_400_BAD_REQUEST)
+
     try:
-        if request.method == 'POST':
-            name = request.data.get('name')
-            category_id = request.data.get('category_id')
-            if SubCategory.objects.filter(name=name, category_id=category_id).exists():
-                return Response({'error': 'This name is already registered at the SubCategory.'}, status=status.HTTP_400_BAD_REQUEST)
-            serializer = SubCategorySerializer(data=request.data)
-            if serializer.is_valid():
-                serializer.save()
-                return Response({'success': 'Subcategory created successfully', 'data': serializer.data}, status=status.HTTP_201_CREATED)
-            else:
-                return Response({'error': serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
+        category_model = Category.objects.get(
+            name=category
+        )
+    except Category.DoesNotExist:
+        return Response({'error': _('Category Not Found')}, status=status.HTTP_404_NOT_FOUND)
+
+    category_exists = SubCategory.objects.filter(
+        name=name, category=category_model).exists()
+
+    if category_exists:
+        return Response({
+            "message": "This Subcategory Is Already Registered"
+        }, status=status.HTTP_400_BAD_REQUEST)
+
+    try:
+        SubCategory.objects.create(
+            category=category_model,
+            name=name
+        )
+        return Response({'error': _('Subcategory created successfully')}, status=status.HTTP_200_OK)
     except Exception as e:
-        return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response({'error': _('an error occurred while creating the subcategory')}, status=status.HTTP_400_BAD_REQUEST)

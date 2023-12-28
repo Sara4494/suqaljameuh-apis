@@ -3,16 +3,17 @@ from rest_framework.response import Response
 from rest_framework import permissions, status
 from varieties.models import Type
 from varieties.apis.serializers import TypeSerializer
+from django.utils.translation import gettext as _
 @api_view(['DELETE'])
 @permission_classes([permissions.IsAdminUser])
 def delete_type(request, pk):
     try:
         type = Type.objects.get(pk=pk)
     except Type.DoesNotExist:
-        return Response({'error': 'Type object not found.'}, status=status.HTTP_404_NOT_FOUND)
+        return Response({'error': _('Type object not found.')}, status=status.HTTP_404_NOT_FOUND)
 
     try:
         type.delete()
-        return Response({'message': 'Type deleted successfully.'}, status=status.HTTP_200_OK)
+        return Response({'message': _('Type deleted successfully.')}, status=status.HTTP_200_OK)
     except Exception as e:
         return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

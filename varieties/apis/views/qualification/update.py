@@ -5,6 +5,8 @@ from rest_framework import permissions, status
 from varieties.models import Qualification
 from varieties.apis.serializers import QualificationSerializer
 
+from django.utils.translation import gettext as _
+
 @api_view(['PUT'])
 @permission_classes([permissions.IsAuthenticated])
 def qualification_update(request, pk):
@@ -13,10 +15,10 @@ def qualification_update(request, pk):
         serializer = QualificationSerializer(qualification, data=request.data)
         if serializer.is_valid():
             serializer.save(user=request.user)
-            return Response({'message': 'Qualification updated successfully.'}, status=status.HTTP_200_OK)
+            return Response({'message': _('Qualification updated successfully.')}, status=status.HTTP_200_OK)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     except Qualification.DoesNotExist:
-        return Response({'error': 'Qualification object not found.'}, status=status.HTTP_404_NOT_FOUND)
+        return Response({'error': _('Qualification object not found.')}, status=status.HTTP_404_NOT_FOUND)
     except Exception as e:
-        return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response({'error': str(e), 'message': _('Internal server error occurred.')}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
